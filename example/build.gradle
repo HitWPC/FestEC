@@ -23,6 +23,9 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation project(':latte-compiler')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    annotationProcessor project(':latte-compiler')
     implementation project(':latte-ec')
 }
